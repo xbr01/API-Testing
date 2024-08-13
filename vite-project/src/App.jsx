@@ -1,9 +1,6 @@
 import { Suspense, lazy, useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-const cors = require('cors');
 import './App.css'
-
-app.use(cors());
 
 const PetList = lazy(() => import('./pages/PetList'))
 const PetDetail = lazy(() => import('./pages/PetDetail'))
